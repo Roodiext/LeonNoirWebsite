@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ralph Polo Details</title>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="sproduct.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <section id="header" class="header">
+        <a href="#"><img src="/website/foto/logo noir.png" alt="" class="logo"></a>
+        <div>
+            <ul class="navbar" id="navbar">
+                <li><a  href="shop.html">Home</a></li>
+                <li><a class="active" href="shop.html">shop</a></li>
+                <li><a href="blog.html">blog</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="contact.html">contact</a></li>
+                <li><a href="cart.html"><i class='fas fa-shopping-bag'></i></a></li>
+                <li><a href="#" id="close"><i class="fas fa-times"></i></a></li>
+            </ul>
+                
+        </div>
+
+        <div class="mobile">
+            <a href="cart.html"><i class='fas fa-shopping-bag'></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+    <section id="prodetails" class="section-p1">
+        <div class="single-pro-image">
+            <img src="PoloFx/ralph long black.jpg" width="100%" id="MainImg" alt="">
+
+            <div class="small-img-group">
+                <div class="small-img-col">
+                    <img src="PoloFx/ralph long black.jpg" width="100%"  class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="PoloFx/ralph brown long.jpg" width="100%"  class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="PoloFx/ralph navy long.jpg" width="100%"  class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="PoloFx/ralph long navy red.jpg" width="100%"  class="small-img" alt="">
+                </div>
+            </div>
+
+        </div>
+ 
+        <div class="single-pro-details">
+                <h6>Home/Product</h6>
+                <h4>Polo Long Sleve By Ralph Lauren</h4>
+                <h2>$29.0</h2>
+                <select>
+                    <option>Select Size</option>
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                    <option>XL</option>
+                    <option>XXL</option>
+                </select>
+                <input type="number" value="1">
+                <button class="normal">Add To Cart</button>
+                <h4>Product Details</h4>
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi distinctio quaerat ipsum veritatis provident quam nisi quas ex? Expedita enim sed voluptate debitis, nihil ullam! Impedit atque tempora sit maxime.</span>
+        </div>
+       
+    </section>
+
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>Sign Up For Newsletters</h4>
+            <p>Get E-mail updates about our latest shop and <span>special offers</span></p>
+
+        </div>
+
+        <div class="form">
+            <input type="text" placeholder="your email adress">
+            <button class="normal">Sign Up</button> 
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container-footer">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">affiliate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">shipping</a></li>
+                        <li><a href="#">returns</a></li>
+                        <li><a href="#">order status</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>online shop</h4>
+                    <ul>
+                        <li><a href="#">polo</a></li>
+                        <li><a href="#">Sweater</a></li>
+                        <li><a href="#">Jacket</a></li>
+                        <li><a href="#">dress</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>
+
+   <script>
+    var MainImg = document.getElementById("MainImg");
+    var smalling = document.getElementsByClassName("small-img");
+
+     
+    smalling[0].onclick = function(){
+        MainImg.src = smalling[0].src;
+    }
+    smalling[1].onclick = function(){
+        MainImg.src = smalling[1].src;
+    }
+    smalling[2].onclick = function(){
+        MainImg.src = smalling[2].src;
+    }
+    smalling[3].onclick = function(){
+        MainImg.src = smalling[3].src;
+    }
+   </script>
+   <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+</body>
+</html>
